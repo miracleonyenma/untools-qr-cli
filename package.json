@@ -1,5 +1,5 @@
 {
-  "name": "terminal",
+  "name": "clnk-terminal",
   "version": "0.0.1",
   "description": "Generate QR codes in the terminal",
   "main": "dist/index.js",
