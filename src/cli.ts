@@ -4,7 +4,7 @@ import { renderQRCodeInTerminal, saveQRCodeToFile } from "./index";
 import chalk from "chalk";
 
 program
-  .name("qrcode-term")
+  .name("qr-cli")
   .description("Generate QR codes in the terminal")
   .version("1.0.0");
 

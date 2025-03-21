@@ -6,30 +6,30 @@ Generate QR codes directly in your terminal or save them to files using this Typ
 
 ```bash
 # Install globally
-npm install -g qrcode-terminal-ts
+npm install -g @untools/qr-cli
 
 # Or use with npx
-npx qrcode-terminal-ts generate "https://example.com"
+npx @untools/qr-cli generate "https://example.com"
 ```
 
 ## CLI Usage
 
 ```bash
 # Basic usage
-qrcode-term generate "https://example.com"
+qr-cli generate "https://example.com"
 
 # With custom styling
-qrcode-term generate "https://example.com" --dark "##" --light ".." --margin 2
+qr-cli generate "https://example.com" --dark "##" --light ".." --margin 2
 
 # With colors
-qrcode-term generate "https://example.com" --color "blue"
-qrcode-term generate "https://example.com" --color "#ff0000"
+qr-cli generate "https://example.com" --color "blue"
+qr-cli generate "https://example.com" --color "#ff0000"
 
 # Compact mode
-qrcode-term generate "https://example.com" --small
+qr-cli generate "https://example.com" --small
 
 # Save to file
-qrcode-term generate "https://example.com" --output qrcode.png
+qr-cli generate "https://example.com" --output qrcode.png
 ```
 
 ## API Usage
@@ -37,7 +37,7 @@ qrcode-term generate "https://example.com" --output qrcode.png
 You can also use this package programmatically:
 
 ```typescript
-import { renderQRCodeInTerminal, saveQRCodeToFile } from 'qrcode-terminal-ts';
+import { renderQRCodeInTerminal, saveQRCodeToFile } from '@untools/qr-cli';
 
 // Display QR code in terminal
 await renderQRCodeInTerminal('https://example.com', {

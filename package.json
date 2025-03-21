@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
-    "qrcode-term": "dist/cli.js"
+    "qr-cli": "dist/cli.js"
   },
   "scripts": {
     "build": "tsc",

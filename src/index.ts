@@ -23,7 +23,7 @@ export async function renderQRCodeInTerminal(
       | "white"
       | "gray"
       | "black";
-  } = {},
+  } = {}
 ): Promise<void> {
   const { dark = "█", light = " ", margin = 1, small = false, color } = options;
 
@@ -64,7 +64,7 @@ export async function renderQRCodeInTerminal(
 export async function saveQRCodeToFile(
   text: string,
   filePath: string,
-  options: qrcode.QRCodeToFileOptions = {},
+  options: qrcode.QRCodeToFileOptions = {}
 ): Promise<void> {
   try {
     await qrcode.toFile(filePath, text, {
@@ -83,7 +83,7 @@ export async function saveQRCodeToFile(
 // CLI logic
 if (require.main === module) {
   program
-    .name("qrcode-terminal")
+    .name("qr-cliinal")
     .description("Generate QR codes in the terminal")
     .version("1.0.0");
 
